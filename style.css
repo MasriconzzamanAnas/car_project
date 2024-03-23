@@ -52,3 +52,30 @@ body {
     color: #1743e3;
     transition: .3s; 
 }
+.social-meida{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    background: transparent;
+}
+.social-meida a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    border:  1px solid transparent;
+    transform:rotate(45deg);
+    transition:.3s;
+}
+.social-meida a i{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transform:rotate(-45deg);
+}
+.social-meida a:hover{
+    border-color: red;
+}

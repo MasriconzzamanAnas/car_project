@@ -77,7 +77,7 @@ body {
     transform:rotate(-45deg);
 }
 .social-meida a:hover{
-    border-color: red;
+    border-color: #eeeeee;
 }
 .home{
     width: 100%;
@@ -85,6 +85,8 @@ body {
     display: flex;
     align-items: center;
     padding: 50px 8% 0;
+    justify-content: space-between;
+    overflow: hidden;
 }
 .home-content{
     width: 650px;
@@ -122,4 +124,36 @@ body {
 .btn:hover{
     background: transparent;
     color: #1743e3;
+}
+/* home img */
+.home-img{
+    position: relative;
+    height: 450px;
+    width: 450px;
+    right: -8%;
+}
+.home-img .box1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 25px solid #1743e3;
+    transform: rotate(45deg);
+    background: transparent;
+    box-shadow: -15px 15px 15px rgba(0, 0, 0, .5);
+}
+.home-img .box1 img {
+    position: absolute;
+    top: 110px;
+    left: -250px;
+    max-width: 750px;
+    transform: rotate(-45deg);
+}
+.home .box2 {
+    position: absolute;
+    width: 650px;
+    height: 50px;
+    background: #1743e3;
+    top: -25px;
+    right: -25px;
+    transform: rotate(45deg);
 }

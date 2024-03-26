@@ -28,6 +28,7 @@ body {
     color: #222;
     font-weight: 600;
     text-decoration: none;
+    animation: startRight 1s ease forwards;
 }
 .nav ul {
     display: flex;
@@ -40,11 +41,14 @@ body {
 }
 
 .nav ul li a{
+    display: inline-block;
     color: #222;
     margin: 0 25px;
     text-decoration: none;
     justify-content: space-between;
     text-transform: capitalize;
+    animation: starttop 1s ease forwards;
+    animation-duration: calc(.2s * var(--i));
 }
 
 .nav ul li a:hover,
@@ -72,7 +76,7 @@ body {
     transition:.3s;
 }
 .social-meida a i{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     transform:rotate(-45deg);
 }
@@ -151,11 +155,35 @@ body {
 }
 .home .box2 {
     position: absolute;
-    width: 650px;
-    height: 650px;
+    width: 700px;
+    height: 700px;
     background: #1743e3;
     top: -25%;
     right: -25%;
     transform: rotate(45deg);
     z-index: -1;
+}
+
+/* kyeframe startRight */
+
+@keyframes startRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes starttop{
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

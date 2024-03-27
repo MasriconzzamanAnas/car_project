@@ -171,6 +171,9 @@ body {
     left: -250px;
     max-width: 750px;
     transform: rotate(-45deg);
+    opacity: 0;
+    animation: car 1s ease forwards;
+    animation-delay: 2s;
 }
 .home .box2 {
     position: absolute;
@@ -246,5 +249,15 @@ body {
     100%{
         transform: scale(1) rotate(45deg);
         opacity: 1;
+    }
+}
+@keyframes car {
+    0% {
+        opacity: 0;
+        transform: translate(300px, -300px) scale(0) rotate(-45deg);
+    }
+    100% {
+        opacity: 1;
+        transform :translate(0, 0) scale(1) rotate(-45deg);
     }
 }
